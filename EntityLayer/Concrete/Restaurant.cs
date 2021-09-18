@@ -10,16 +10,14 @@ namespace EntityLayer.Concrete
     public class Restaurant
     {
         [Key]
-        public int RestaurantId { get; set; }
-        //
+        public int RestaurantID { get; set; }
         public string RestaurantName { get; set; }
-        //
-        public float RestaurantRating { get; set; }
-        public string RestaurantDesc { get; set; }
-        public string MinOrderPrice { get; set; }
+        public string RestaurantType { get; set; }
         public bool RestaurantStatus { get; set; }
 
+        public int UserID { get; set; }
+        public User user { get; set; }
 
-
+        public List<Food> foods { get; set; }
     }
 }

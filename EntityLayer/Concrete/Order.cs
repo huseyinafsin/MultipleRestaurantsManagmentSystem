@@ -10,17 +10,15 @@ namespace EntityLayer.Concrete
     public class Order
     {
         [Key]
-        public int OrderId { get; set; }
-        //
-        public int UniqueKey { get; set; }
-        //
-        public DateTime OrderDate { get; set; }
-        public int StatusId { get; set; }
-        public string Address { get; set; }
-        public double FinalPrice { get; set; }
-        public bool OrderStatus { get; set; }
+        public int OrderID { get; set; }
+        public int FoodCount { get; set; }
+        public DateTime Date { get; set; }
+        public string FoodCondition { get; set; }
 
+        public int UserID { get; set; }
+        public User user { get; set; }
 
-
+        public int FoodID { get; set; }
+        public Food food { get; set; }
     }
 }

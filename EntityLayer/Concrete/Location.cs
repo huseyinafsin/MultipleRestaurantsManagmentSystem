@@ -10,10 +10,10 @@ namespace EntityLayer.Concrete
     public class Location
     {
         [Key]
-        public int LocationId { get; set; }
+        public int LocationID { get; set; }
         public string LocationName { get; set; }
-        public bool LocationStatus { get; set; }
+        //public bool LocationStatus { get; set; }
 
-
+        public List<UserAdress> userAdresses { get; set; }
     }
 }
