@@ -10,9 +10,10 @@ namespace EntityLayer.Concrete
     public class FoodCategory
     {
         [Key]
-        public int FoodCategoryId { get; set; }
+        public int FoodCategoryID { get; set; }
         public string FoodCategoryName { get; set; }
-        public bool FoodCategoryStatus { get; set; }
+        //public bool FoodCategoryStatus { get; set; }
 
+        public List<Food> foods { get; set; }
     }
 }

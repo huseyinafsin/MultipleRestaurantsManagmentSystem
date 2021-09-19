@@ -10,13 +10,14 @@ namespace EntityLayer.Concrete
     public class Basket
     {
         [Key]
-        public int BasketId { get; set; }
-        //
-        //
-        public int QTY { get; set; }
-        public float UnitPrice { get; set; }
-        public bool BasketStatus { get; set; }
+        public int BasketID { get; set; }
+        public int FoodCount { get; set; }
+        public DateTime Date { get; set; }
 
+        public int UserID { get; set; }
+        public User user { get; set; }
 
+        public int FoodID { get; set; }
+        public Food food { get; set; }
     }
 }
