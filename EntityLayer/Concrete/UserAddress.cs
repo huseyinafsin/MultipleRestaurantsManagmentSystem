@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
-    public class UserAdress
+    public class UserAddress
     {
         public int UserAdressID { get; set; }
         public string Adress { get; set; }
 
         public int UserID { get; set; }
-        public User user { get; set; }
+        public User User { get; set; }
 
         public int LocationID { get; set; }
-        public Location location { get; set; }
+        public Location Location { get; set; }
     }
 }

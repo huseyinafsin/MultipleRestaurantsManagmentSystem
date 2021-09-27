@@ -22,11 +22,11 @@ namespace EntityLayer.Concrete
         public string UserPicture { get; set; }
         public bool UserStatus { get; set; }
 
-        public List<UserAdress> userAdresses { get; set; }
-        public List<Restaurant> restaurants { get; set; }
-        public List<Order> orders { get; set; }
-        public List<Message> messages { get; set; }
-        public List<Comment> comments { get; set; }
-        public List<Basket> baskets { get; set; }
+        public List<UserAddress> UserAdresses { get; set; }
+        public List<Restaurant> Restaurants { get; set; }
+        public List<Order> Orders { get; set; }
+        public List<Message> Messages { get; set; }
+        public List<Comment> Comments { get; set; }
+        public List<Basket> Baskets { get; set; }
     }
 }

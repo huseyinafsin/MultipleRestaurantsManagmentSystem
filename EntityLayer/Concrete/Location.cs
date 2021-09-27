@@ -14,6 +14,6 @@ namespace EntityLayer.Concrete
         public string LocationName { get; set; }
         //public bool LocationStatus { get; set; }
 
-        public List<UserAdress> userAdresses { get; set; }
+        public List<UserAddress> UserAdresses { get; set; }
     }
 }

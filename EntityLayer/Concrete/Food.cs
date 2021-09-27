@@ -17,12 +17,12 @@ namespace EntityLayer.Concrete
         public bool FoodStatus { get; set; }
 
         public int FoodCategoryID { get; set; }
-        public FoodCategory foodCategory { get; set; }
+        public FoodCategory FoodCategory { get; set; }
 
         public int RestaurantID { get; set; }
-        public Restaurant restaurant { get; set; }
+        public Restaurant Restaurant { get; set; }
 
-        public List<Basket> baskets { get; set; }
-        public List<Order> orders { get; set; }
+        public List<Basket> Baskets { get; set; }
+        public List<Order> Orders { get; set; }
     }
 }

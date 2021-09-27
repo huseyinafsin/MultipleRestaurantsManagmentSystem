@@ -16,8 +16,8 @@ namespace EntityLayer.Concrete
         public bool RestaurantStatus { get; set; }
 
         public int UserID { get; set; }
-        public User user { get; set; }
+        public User User { get; set; }
 
-        public List<Food> foods { get; set; }
+        public List<Food> Foods { get; set; }
     }
 }

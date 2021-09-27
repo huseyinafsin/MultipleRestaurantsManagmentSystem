@@ -16,9 +16,9 @@ namespace EntityLayer.Concrete
         //public bool MessageStatus { get; set; }
 
         public int ToUserID { get; set; }
-        public User fromUser { get; set; }
+        public User FromUser { get; set; }
 
         public int FromUserID { get; set; }
-        public User toUser { get; set; }
+        public User ToUser { get; set; }
     }
 }

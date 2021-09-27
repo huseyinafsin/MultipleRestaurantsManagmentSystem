@@ -14,6 +14,6 @@ namespace EntityLayer.Concrete
         public string FoodCategoryName { get; set; }
         //public bool FoodCategoryStatus { get; set; }
 
-        public List<Food> foods { get; set; }
+        public List<Food> Foods { get; set; }
     }
 }
