@@ -9,7 +9,6 @@ C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaur
 C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem\bin\Debug\net5.0\MultipleRestaurantsManagentSystem.pdb
 C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem\bin\Debug\net5.0\MultipleRestaurantsManagentSystem.Views.dll
 C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem\bin\Debug\net5.0\MultipleRestaurantsManagentSystem.Views.pdb
-C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem\obj\Debug\net5.0\MultipleRestaurantsManagentSystem.csproj.AssemblyReference.cache
 C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem\obj\Debug\net5.0\MultipleRestaurantsManagentSystem.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem\obj\Debug\net5.0\MultipleRestaurantsManagentSystem.AssemblyInfoInputs.cache
 C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem\obj\Debug\net5.0\MultipleRestaurantsManagentSystem.AssemblyInfo.cs
@@ -38,3 +37,5 @@ C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaur
 C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem\obj\Debug\net5.0\MultipleRestaurantsManagentSystem.pdb
 C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem\obj\Debug\net5.0\MultipleRestaurantsManagentSystem.genruntimeconfig.cache
 C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem\obj\Debug\net5.0\MultipleRestaurantsManagentSystem.csproj.CopyComplete
+C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem\bin\Debug\net5.0\libman.json
+C:\Users\pantheon\source\repos\MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem\obj\Debug\net5.0\MultipleRestaurantsManagentSystem.csproj.AssemblyReference.cache

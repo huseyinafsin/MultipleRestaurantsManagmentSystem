@@ -3,4 +3,2004 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dynamic Admin Panel :: Home</title>
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="https://restaurant.bdtask.com/demo-classic/assets/img/icons/2021-03-06/f.png" type="image/x-icon">
+
+
+    <!-- Start Global Mandatory Style -->
+    <!-- jquery-ui css -->
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap -->
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap tag input-->
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap rtl -->
+    <!-- Lobipanel css -->
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/lobipanel.min.css" rel="stylesheet" type="text/css" />
+    <!-- Pace css -->
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/flash.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/all.css" rel="stylesheet" type="text/css" />
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/fontawesome-iconpicker.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Font Awesome -->
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Pe-icon -->
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css" />
+    <!-- Themify icons -->
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/themify-icons.css" rel="stylesheet" type="text/css" />
+    <!-- select2.min -->
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <!-- timepicker -->
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/jquery-ui-timepicker-addon.min.css" rel="stylesheet" type="text/css" />
+    <!-- datatable -->
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/datatables/css/dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/toastr/toastr.css" rel="stylesheet" type="text/css" />
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/kitchen.css" rel="stylesheet" type="text/css" />
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/print.css" rel="stylesheet" type="text/css" />
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/extra.css" rel="stylesheet" type="text/css" />
+    <!-- End Global Mandatory Style
+
+    <!- Theme style -->
+    <link href="https://restaurant.bdtask.com/demo-classic/assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Theme style rtl -->
+    <!-- Include module style -->
+    <link href=https://restaurant.bdtask.com/demo-classic/application/modules/accounts/assets/css/style.css rel="stylesheet">
+    <link href=https://restaurant.bdtask.com/demo-classic/application/modules/addon/assets/css/style.css rel="stylesheet">
+    <link href=https://restaurant.bdtask.com/demo-classic/application/modules/hrm/assets/css/style.css rel="stylesheet">
+    <link href=https://restaurant.bdtask.com/demo-classic/application/modules/itemmanage/assets/css/style.css rel="stylesheet">
+    <link href=https://restaurant.bdtask.com/demo-classic/application/modules/ordermanage/assets/css/style.css rel="stylesheet">
+    <link href=https://restaurant.bdtask.com/demo-classic/application/modules/production/assets/css/style.css rel="stylesheet">
+    <link href=https://restaurant.bdtask.com/demo-classic/application/modules/purchase/assets/css/style.css rel="stylesheet">
+    <link href=https://restaurant.bdtask.com/demo-classic/application/modules/report/assets/css/style.css rel="stylesheet">
+    <link href=https://restaurant.bdtask.com/demo-classic/application/modules/reservation/assets/css/style.css rel="stylesheet">
+    <link href=https://restaurant.bdtask.com/demo-classic/application/modules/setting/assets/css/style.css rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/jquery-1.12.4.min.js" type="text/javascript"></script>
+
+
+    <style>
+        .loading:after {
+  content: ' .';
+  animation: dots 1s steps(5, end) infinite;}
+		keyframes dots {
+  20%, 20% {
+    color: rgba(0,0,0,1);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  40% {
+    color: #F00;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  60% {
+    text-shadow:
+      .25em 0 0 #F00,
+      .5em 0 0 rgba(0,0,0,0);}
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 #666,
+      .5em 0 0 #666;}}
+
+    </style>
+</head>
+
+<body class="hold-transition sidebar-mini ">
+    <!-- Site wrapper -->
+
+    <div class="wrapper">
+        <script>
+		$(document).ready(function()
+		{
+
+			setTimeout(function () {
+                $('.page-loader-wrapper').fadeOut();
+            }, 2000);
+
+		});
+
+        </script>
+        <header class="main-header">
+            <a href="https://restaurant.bdtask.com/demo-classic/dashboard/home" class="logo">
+                <span class="logo-lg">
+                    <img src="https://restaurant.bdtask.com/demo-classic/assets/img/icons/2021-03-06/b1.png" alt="">
+                </span>
+            </a>
+            <style>
+	keyframes anim_opa {
+	  50%  {opacity: 0.2}
+	}
+	.navbar-nav li .lang_box{
+        line-height: 36px;
+        color: #374767;
+    }
+    .navbar-nav li .lang_options{
+        min-width: 90px;
+    }
+            </style>
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top">
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <!-- Sidebar toggle button-->
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="pe-7s-keypad"></span>
+                </a>
+                <span class="top-fixed-link">
+                    <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/pos_invoice" class="btn btn-success btn-outline"><i class="fa fa-plus"></i> Pos Invoice</a>
+                    <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderlist" class="btn btn-success btn-outline"><i class="fa fa-list"></i> Order list </a>
+                    <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/allkitchen" class="btn btn-success btn-outline"><i class="fa fa-user-o" aria-hidden="true"></i> Kitchen Dashboard</a>
+                    <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/counterboard" class="btn btn-success btn-outline"><i class="fa fa-th"></i> Counter Dashboard</a>
+                </span>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Order Alert -->
+                        <li><a id="fullscreen" href="#" class="getid1"><i class="pe-7s-expand1"></i></a></li>
+                        <li class="dropdown messages-menu">
+
+                            <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation" class="dropdown-toggle">
+                                <i class="fa fa-bell-o"></i>
+                                <span class="label label-success reservenotif">0</span>
+                            </a>
+                            <input name="csrfres" id="csrfresarvation" type="hidden" value="csrf_test_name" />
+                            <input name="csrfhash" id="csrfhashresarvation" type="hidden" value="22cf7b9e2201de3d16e6de1a51d8432f" />
+                        </li>
+                        <!-- Messages -->
+                        <!-- settings -->
+                        <li class="dropdown dropdown-user">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="pe-7s-settings"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/home/profile"><i class="pe-7s-users"></i> Profile</a></li>
+                                <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/home/setting"><i class="pe-7s-settings"></i> Setting</a></li>
+                                <li><a href="https://restaurant.bdtask.com/demo-classic/logout"><i class="pe-7s-key"></i>  Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-user">
+                            <a href="#" class="dropdown-toggle lang_box" data-toggle="dropdown"> ENG</a>
+                            <ul class="dropdown-menu lang_options">
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/english">
+                                        English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/deutsch">
+                                        Deutsch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/demo">
+                                        Demo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/portugues">
+                                        Portugues
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/spanish">
+                                        Spanish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/vietnam">
+                                        Vietnam
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/french">
+                                        French
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/espagnol">
+                                        Espagnol
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/wimbum">
+                                        Wimbum
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/bassa">
+                                        Bassa
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/francais">
+                                        Francais
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/eng">
+                                        Eng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/polish">
+                                        Polish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/chinese">
+                                        Chinese
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/turkish">
+                                        Turkish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/italian">
+                                        Italian
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/persian">
+                                        Persian
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/svenska">
+                                        Svenska
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/dari">
+                                        Dari
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/finish">
+                                        Finish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/marathi">
+                                        Marathi
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/portu">
+                                        Portu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/khmer">
+                                        Khmer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/telugu">
+                                        Telugu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/slovencina">
+                                        Slovencina
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/es_es">
+                                        Es_es
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/thailand">
+                                        Thailand
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/k">
+                                        K
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/tur">
+                                        Tur
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/portugus">
+                                        Portugus
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/rus">
+                                        Rus
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/hindi">
+                                        Hindi
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/burmese">
+                                        Burmese
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/urdu">
+                                        Urdu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/laos">
+                                        Laos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/ara">
+                                        Ara
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/swe">
+                                        Swe
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/se">
+                                        Se
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/sw">
+                                        Sw
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/ru">
+                                        Ru
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/amharic">
+                                        Amharic
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" onclick="addlang(this)" data-url="https://restaurant.bdtask.com/demo-classic/hungry/setlangue/arabic">
+                                        Arabic
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Left side column. contains the sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel text-center">
+                    <div class="image">
+                        <img src="https://restaurant.bdtask.com/demo-classic/./assets/img/user/FB_IMG_1619540206426.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <p>Talha Mahmood</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> Admin</a>
+                    </div>
+                </div>
+
+
+                <!-- sidebar menu -->
+                <ul class="sidebar-menu">
+
+                    <li class="treeview active">
+                        <a href="https://restaurant.bdtask.com/demo-classic/dashboard/home">
+                            <i class="ti-home"></i> <span>Dashboard</span>
+                        </a>
+                    </li>
+
+
+
+                    <!-- *************************************
+                    **********STATS OF CUSTOM MODULES*********
+                    ************************************* -->
+                    <li class="treeview ">
+
+                        <a href="javascript:void(0)">
+                            <i class='fa fa-first-order' aria-hidden='true'></i> <span>Manage Order</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+
+                        <ul class="treeview-menu">
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/pos_invoice">Pos Invoice</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderlist">Order list </a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/pendingorder">Pending order </a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/completelist">Complete order </a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/cancellist">Cancel order </a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/allkitchen">Kitchen Dashboard</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/counterboard">Counter Dashboard</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/counterlist">Counter List</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/possetting">POS Setting</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/soundsetting">Sound Setting</a>
+                            </li>
+
+                            <!-- endforeach -->
+                        </ul>
+                    </li>
+                    <!-- end if -->
+                    <!-- end foreach -->
+                    <li class="treeview ">
+
+                        <a href="javascript:void(0)">
+                            <i class='fa fa-tags' aria-hidden='true'></i> <span>Reservation</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+
+                        <ul class="treeview-menu">
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/index">Reservation</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/tablebooking">Add Booking</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/unavailablelist">Unavailable Day</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/setting">Reservation Setting</a>
+                            </li>
+
+                            <!-- endforeach -->
+                        </ul>
+                    </li>
+                    <!-- end if -->
+                    <!-- end foreach -->
+                    <li class="treeview ">
+
+                        <a href="javascript:void(0)">
+                            <i class='fa fa-shopping-cart' aria-hidden='true'></i> <span>Purchase Manage</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+
+                        <ul class="treeview-menu">
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/purchase/purchase/index">Purchase Item</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/purchase/purchase/create">Add Purchase</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/purchase/purchase/return_form">Purchase Return</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/purchase/purchase/return_invoice">Return Invoice</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/purchase/supplierlist/index">Supplier Manage</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/purchase/supplierlist/supplier_ledger_report">Supplier Ledger</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/purchase/purchase/stock_out_ingredients">Stock Out Ingredients</a>
+                            </li>
+
+                            <!-- endforeach -->
+                        </ul>
+                    </li>
+                    <!-- end if -->
+                    <!-- end foreach -->
+                    <li class="treeview ">
+
+                        <a href="javascript:void(0)">
+                            <i class='fa fa-line-chart' aria-hidden='true'></i> <span>Report</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+
+                        <ul class="treeview-menu">
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/report/reports/index">Purchase Report</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/report/reports/productwise">Stock Report (Product Wise)</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/report/reports/ingredientwise">Stock Report (Kitchen)</a>
+                            </li>
+
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Sell Report                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/report/reports/sellrpt">Sell Report</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/report/reports/sellrptItems">Sell Report Items</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/report/reports/servicerpt">Service Charge Repoert</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/report/reports/sellrptwaiter">Sell Report Waiters</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/report/reports/kichansrpt">Kitchen Sell</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/report/reports/sellrptdelvirytype">Sell Report Delivery Type </a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/report/reports/sellrptCasher">Sell Report Cashier</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/report/reports/cashregister">Cashregister Report</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/report/reports/sellrpt2">Sell Report Filtering</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/report/reports/sellrptbydate">sell By Date</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/report/reports/payroll_commission">Commission </a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/report/reports/table_sale">Sale By Table</a>
+                            </li>
+
+                            <!-- endforeach -->
+                        </ul>
+                    </li>
+                    <!-- end if -->
+                    <!-- end foreach -->
+                    <li class="treeview ">
+
+                        <a href="javascript:void(0)">
+                            <i class='fa fa-cube' aria-hidden='true'></i> <span>Food Management</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+
+                        <ul class="treeview-menu">
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Manage Category                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/itemmanage/item_category/create">Add Category</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/itemmanage/item_category/index">Category List</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Manage Food                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/itemmanage/item_food/create">Add Food</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/itemmanage/item_food/index">Food list </a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/itemmanage/item_food/addgroupfood">Add Group Item</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/itemmanage/item_food/foodvarientlist">Food varient </a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/itemmanage/item_food/availablelist">Food Availablity</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/itemmanage/item_food/todaymenutype">Menu TYpe</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Manage Adons                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/itemmanage/menu_addons/create">Add Add-ons</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/itemmanage/menu_addons/index">Addons list </a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/itemmanage/menu_addons/assignaddons">Add-ons Assign List</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                        </ul>
+                    </li>
+                    <!-- end if -->
+                    <!-- end foreach -->
+                    <li class="treeview ">
+
+                        <a href="javascript:void(0)">
+                            <i class='fa fa-product-hunt' aria-hidden='true'></i> <span>Production</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+
+                        <ul class="treeview-menu">
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/production/production/productionunit">Set Production Unit</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/production/production/index">Production Set List</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/production/production/create">Add Production</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/production/production/possetting">Production Setting</a>
+                            </li>
+
+                            <!-- endforeach -->
+                        </ul>
+                    </li>
+                    <!-- end if -->
+                    <!-- end foreach -->
+                    <li class="treeview ">
+
+                        <a href="javascript:void(0)">
+                            <i class='fa fa-gear' aria-hidden='true'></i> <span>Setting</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+
+                        <ul class="treeview-menu">
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Payment setting                                         <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/paymentmethod/index">Payment Method List</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/paymentmethod/paymentsetup">Payment Setup</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/shippingmethod/index">Shipping Method Setting</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Manage Table                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/restauranttable/index">Table list </a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/restauranttable/tablesetting">Table setting </a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Customer type                                         <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/customerlist/index">Customer list </a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/customertype/index">Customer Type List</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/thirdpratycustomer/index">Third-Party Customers</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/card_terminal/index">Card Terminal List</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    kitchen Setting                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/kitchensetting/index">Kitchen List</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/kitchensetting/assignkitchen">Kitchen Assign</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/kitchensetting/kitchen_dashboardsetting">Kitchen Dashboard Setting</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Unit Measurement                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/unitmeasurement/index">Unit Measurement List</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/ingradient/index">Ingredient List</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    SMS Setting                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/smsetting/sms_configuration">SMS Configuration</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/smsetting/sms_template">SMS Template</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Bank                                         <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/bank_list/index">Bank List</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/setting/bank_list/bank_transaction">Bank Transaction</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/setting/language/index">Language </a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/setting/setting/index">Application setting </a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/setting/serversetting/index">App Setting</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/setting/setting/factoryreset">Factory Reset</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/setting/currency/index">Currency </a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/setting/country_city_list/index">Country</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/setting/country_city_list/statelist">State</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/setting/country_city_list/citylist">City</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/setting/Commissionsetting/payroll_commission">Commission </a>
+                            </li>
+
+                            <!-- endforeach -->
+                        </ul>
+                    </li>
+                    <!-- end if -->
+                    <!-- end foreach -->
+                    <li class="treeview ">
+
+                        <a href="javascript:void(0)">
+                            <i class='ti-bag'></i> <span>Accounts</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+
+                        <ul class="treeview-menu">
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/show_tree">Chart of Account</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/supplier_payments">Supplier Payment</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/cash_adjustment">Cash Adjustment</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/debit_voucher">Debit Voucher</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/credit_voucher">Credit Voucher</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/contra_voucher">Contra Voucher</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/journal_voucher">Journal Voucher</a>
+                            </li>
+
+                            <!-- endforeach -->
+
+
+                            <li class="">
+                                <a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/aprove_v">Voucher Approval</a>
+                            </li>
+
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Account Repor                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/voucher_report">Voucher Report</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/cash_book">Cash Book</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/bank_book">Bank Book</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/general_ledger">General Ledger</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/trial_balance">Trial Balance</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/profit_loss_report">Profit Loss</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/cash_flow_report">Cash Flow</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/coa_print">Coa Print</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/accounts/accounts/balance_sheet">Balance Sheet</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                        </ul>
+                    </li>
+                    <!-- end if -->
+                    <!-- end foreach -->
+                    <li class="treeview ">
+
+                        <a href="javascript:void(0)">
+                            <i class='fa fa-users'></i> <span>Human Resource</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+
+                        <ul class="treeview-menu">
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    HRM                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Employees/create_position">Designation</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Employees/viewEmhistory">Add Employee</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Employees/manageemployee">Manage Employee</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Employees/emp_payment_view">Manage Employee Salary</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Attendance                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Home/index">Attendance Form</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Home/attenlist">Attendance Reports</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Expense                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Cexpense/add_expense_item">Add Expense Item</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Cexpense/manage_expense_item">Manage Expense Item</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Cexpense/add_expense">Add Expense</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Cexpense/manage_expense">Manage Expense</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Cexpense/expense_statement_form">Expense Statement</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Award                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Award_controller/create_award">New Award</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Recruitment                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Candidate/caninfo_create">Add New Candidate</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Candidate/candidateinfo_view">Manage Candidate</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Candidate_select/create_shortlist">Candidate Shortlist</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Candidate_select/create_interview">Interview</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Candidate_select/create_selection">Candidate Selection</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Department                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Department_controller/create_dept">Department</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Division_controller/division_form">Add Division</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Division_controller/index">Manage Division </a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Leave                                         <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Leave/create_weekleave">Weekly Holiday</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Leave/holiday_view">Holiday</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Leave/add_leave_type">Add Leave Type</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Leave/others_leave">Leave Application</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Loan                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Loan/create_grandloan">Grant Loan</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Loan/create_installment">Loan Installment</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Loan/loan_report">Loan Report</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                            <!-- multilevel menu/link -->
+                            <!-- extract $label to compare with segment -->
+                            <li class="">
+                                <a href="#">
+                                    Payroll                                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                                </a>
+                                <ul class="treeview-menu">
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Payroll/create_salary_setup">Salary Type Setup</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Payroll/create_s_setup">Salary SetUp</a></li>
+                                    <li class=""><a href="https://restaurant.bdtask.com/demo-classic/hrm/Payroll/create_salary_generate">Salary Generate</a></li>
+
+                                </ul>
+                            </li>
+
+
+                            <!-- endif -->
+                            <!-- endforeach -->
+                        </ul>
+                    </li>
+                    <!-- end if -->
+                    <!-- end foreach -->
+                    <!-- *************************************
+                    **********ENDS OF CUSTOM MODULES*********
+                    ************************************* -->
+
+                    <li class="header">Default </li>
+
+                    <li class="treeview ">
+                        <a href="#">
+                            <i class="ti-user"></i><span>User</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/user/form">Add User</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/user/index">User List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview"><a href="https://restaurant.bdtask.com/demo-classic/addon/module/index"><i class="fa fa-adn"></i><span>Modules</span> </a></li>
+                    <li class="treeview"><a href="https://restaurant.bdtask.com/demo-classic/addon/theme/index"><i class="fa fa-adn"></i><span>Themes</span> </a></li>
+                    <li class="treeview ">
+                        <a href="#">
+
+                            <i class="ti-lock"></i><span>Role Permission</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/permission_setup">Permission Setup</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/role/create_system_role">Add Role</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/role/role_list">Role List</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/role/user_access_role">User Access Role</a></li>
+
+                        </ul>
+                    </li>
+
+
+
+
+                    <li class="treeview ">
+                        <a href="#">
+                            <i class="ti-settings"></i><span>Web Setting</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/web_setting/">Common Setting</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/web_setting/storetime">Manage store Time</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/web_setting/bannersetting">Banner Setting</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/web_setting/menusetting">Menu Setting</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/web_setting/seosetting">Seo Setting</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/web_setting/socialtting">Social Setting</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/web_setting/widgetsetting">Widget Setting</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/web_setting/email_config_setup">Email Setting</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/rating">Customer </a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/couponlist">Coupon List</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/web_setting/subscribeList">Subscribe List</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview ">
+                        <a href="https://restaurant.bdtask.com/demo-classic/dashboard/autoupdate"><i class="ti-reload"></i> <span>Auto Update</span></a>
+                    </li>
+                    <!-- ends of admin area -->
+
+                    <li class="treeview ">
+                        <a href="#">
+                            <i class="ti-comments"></i><span>Message</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/message/new_message">New</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/message/index">Inbox</a></li>
+                            <li><a href="https://restaurant.bdtask.com/demo-classic/dashboard/message/sent">Sent</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper ">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="header-icon"><i class="pe-7s-home"></i></div>
+                <div class="header-title">
+                    <h1> <!--/--> Home</h1>
+                    <small>Home</small>
+                </div>
+            </section>
+
+            <!-- Main content -->
+            <div class="content">
+                <!-- load messages -->
+                <!-- load custom page -->
+                <link href="https://restaurant.bdtask.com/demo-classic/application/modules/dashboard/assest/css/home_dashboard.css" rel="stylesheet" type="text/css" />
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                        <div class="panel home-panel-bd bg-gradient-custom-orange d-flex align-items-center justify-content-center">
+                            <div class="panel-body">
+                                <div class="statistic-box text-center text-white">
+                                    <h2><span class="count-number">10.4k</span> <span class="slight"> </span></h2>
+                                    <div class="lifeord">Lifetime Orders</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                        <div class="panel home-panel-bd bg-gradient-custom-pink d-flex align-items-center justify-content-center">
+                            <div class="panel-body">
+                                <div class="statistic-box text-center text-white">
+                                    <h2><span class="count-number">3</span> <span class="slight"> </span></h2>
+                                    <div class="lifeord">Today Order</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                        <div class="panel home-panel-bd bg-gradient-custom-teal d-flex align-items-center justify-content-center">
+                            <div class="panel-body">
+                                <div class="statistic-box text-center text-white">
+                                    <h2><span class="count-number">95.45</span></h2>
+                                    <div class="lifeord">Today Sell</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                        <div class="panel home-panel-bd bg-gradient-custom-indigo d-flex align-items-center justify-content-center">
+                            <div class="panel-body">
+                                <div class="statistic-box text-center text-white">
+                                    <h2><span class="count-number">5.9k</span> <span class="slight"> </span></h2>
+                                    <div class="lifeord">Total Customer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                        <div class="panel home-panel-bd bg-gradient-custom-blue d-flex align-items-center justify-content-center">
+                            <div class="panel-body">
+                                <div class="statistic-box text-center text-white">
+                                    <h2><span class="count-number">3.8k</span></h2>
+                                    <div class="lifeord">Total Delivered</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                        <div class="panel home-panel-bd bg-gradient-yellow-red d-flex align-items-center justify-content-center">
+                            <div class="panel-body">
+                                <div class="statistic-box text-center text-white">
+                                    <h2><span class="count-number">46</span> <span class="slight"> </span></h2>
+                                    <div class="lifeord">Total Reservation</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <!-- Latest Order -->
+                    <div class="col-sm-12 col-md-4">
+                        <div class="panel panel-bd ">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <h4>Latest Order</h4>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="message_inner1">
+                                    <div class="message_widgets">
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : test test</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 23423423423</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9999">(9999)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 15:07:04</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9998">(9998)</a></p>
+                                            <p class="inbox-item-text">Table No: Table-3</p>
+                                            <p class="inbox-item-text">Time : 13:45:39</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9997">(9997)</a></p>
+                                            <p class="inbox-item-text">Table No: Table-3</p>
+                                            <p class="inbox-item-text">Time : 13:44:56</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Kamal Hassan</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 0171742241476</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9996">(9996)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 13:40:54</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9995">(9995)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 13:11:43</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Kamal Hassan</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 0171742241476</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9994">(9994)</a></p>
+                                            <p class="inbox-item-text">Table No: Table-3</p>
+                                            <p class="inbox-item-text">Time : 12:46:57</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9993">(9993)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 11:56:16</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9992">(9992)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 11:55:12</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9991">(9991)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 10:07:39</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9990">(9990)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 07:24:37</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Latest Reservation -->
+                    <div class="col-sm-12 col-md-4">
+                        <div class="panel panel-bd">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <h4>Latest Reservation</h4>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="message_inner1">
+                                    <div class="message_widgets">
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : rtyry</strong></p>
+                                            <p class="inbox-item-text">Phone: 1732432986</p>
+                                            <p class="inbox-item-text">Date : <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/index">(2021-01-11)</a></p>
+                                            <p class="inbox-item-text">Table No: Table-2H</p>
+                                            <p class="inbox-item-text">Time : 23:10:30</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : fakhrul islam</strong></p>
+                                            <p class="inbox-item-text">Phone: 01905793801</p>
+                                            <p class="inbox-item-text">Date : <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/index">(2021-01-01)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 17:25:00</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : sandy</strong></p>
+                                            <p class="inbox-item-text">Phone: 4233434321</p>
+                                            <p class="inbox-item-text">Date : <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/index">(2020-12-31)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 18:00:00</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : andrew</strong></p>
+                                            <p class="inbox-item-text">Phone: 34432222322</p>
+                                            <p class="inbox-item-text">Date : <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/index">(2020-12-31)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 19:45:30</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Mazhar Raziv</strong></p>
+                                            <p class="inbox-item-text">Phone: 01613666777</p>
+                                            <p class="inbox-item-text">Date : <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/index">(2020-12-31)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 15:07:00</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : jack</strong></p>
+                                            <p class="inbox-item-text">Phone: 0123123435</p>
+                                            <p class="inbox-item-text">Date : <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/index">(2020-12-30)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 18:45:45</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : calci</strong></p>
+                                            <p class="inbox-item-text">Phone: 4322121121</p>
+                                            <p class="inbox-item-text">Date : <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/index">(2020-12-24)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 16:45:30</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : dfv</strong></p>
+                                            <p class="inbox-item-text">Phone: dsfv</p>
+                                            <p class="inbox-item-text">Date : <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/index">(2020-12-23)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 05:15:15</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : John</strong></p>
+                                            <p class="inbox-item-text">Phone: 789654130</p>
+                                            <p class="inbox-item-text">Date : <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/index">(2020-12-23)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 06:00:00</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Madhu Prasad</strong></p>
+                                            <p class="inbox-item-text">Phone: 09688951918</p>
+                                            <p class="inbox-item-text">Date : <a href="https://restaurant.bdtask.com/demo-classic/reservation/reservation/index">(2020-12-23)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 11:10:00</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Online Order -->
+                    <div class="col-sm-12 col-md-4">
+                        <div class="panel panel-bd">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <h4>Latest Online Order</h4>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="message_inner1">
+                                    <div class="message_widgets">
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9992">(9992)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 11:55:12</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9988">(9988)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 04:56:13</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9987">(9987)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 04:54:24</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9983">(9983)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 02:38:33</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9958">(9958)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 23:08:58</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Kamal Hassan</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 0171742241476</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9953">(9953)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 06:24:48</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9952">(9952)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 03:48:52</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Kamal Hassan</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 0171742241476</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9944">(9944)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 20:24:01</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Kamal Hassan</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 0171742241476</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9940">(9940)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 04:54:34</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No.: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9932">(9932)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 17:08:49</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Monthly Sales Amount and Order -->
+                    <div class="col-sm-12 col-md-12">
+                        <div class="panel panel-bd">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <h4>Monthly Sales Amount and Order</h4>
+                                    <ul class="nav nav-tabs pull-right order_status order_status-new">
+                                        <li><input name="yearmonth" id="datepicker3" class="form-control datepicker3" type="text" placeholder="Month" value="" readonly="readonly"></li>
+                                        <li><input type="button" class="btn btn-success" name="search" value="Search " onclick="searchmonth()"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body" id="salechart">
+                                <canvas id="lineChart" height="100"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Online Vs Offline Order and sales -->
+                    <div class="col-sm-12 col-md-8">
+                        <div class="panel panel-bd">
+
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <h4>Online Vs Offline Order and sales</h4>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <canvas id="barChart" height="435"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pie Chart -->
+                    <div class="col-sm-6 col-md-4">
+                        <div class="panel panel-bd">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <h4>Pending Order</h4>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="message_inner">
+                                    <div class="message_widgets">
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong><span class="profile-status away pull-right"></span></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No..: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9987">(9987)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 04:54:24</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong><span class="profile-status away pull-right"></span></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No..: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9983">(9983)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 02:38:33</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Kiko</strong><span class="profile-status away pull-right"></span></p>
+
+                                            <p class="inbox-item-text">Phone: 123456789</p>
+                                            <p class="inbox-item-text">Order No..: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9981">(9981)</a></p>
+                                            <p class="inbox-item-text">Table No: </p>
+                                            <p class="inbox-item-text">Time : 23:06:34</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : sample name</strong><span class="profile-status away pull-right"></span></p>
+
+                                            <p class="inbox-item-text">Phone: 7854852658</p>
+                                            <p class="inbox-item-text">Order No..: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9980">(9980)</a></p>
+                                            <p class="inbox-item-text">Table No: Table Corner</p>
+                                            <p class="inbox-item-text">Time : 21:34:48</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong><span class="profile-status away pull-right"></span></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No..: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9978">(9978)</a></p>
+                                            <p class="inbox-item-text">Table No: Table Corner</p>
+                                            <p class="inbox-item-text">Time : 19:37:08</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong><span class="profile-status away pull-right"></span></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No..: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9977">(9977)</a></p>
+                                            <p class="inbox-item-text">Table No: Table Corner</p>
+                                            <p class="inbox-item-text">Time : 19:31:55</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong><span class="profile-status away pull-right"></span></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No..: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9976">(9976)</a></p>
+                                            <p class="inbox-item-text">Table No: Table-V6</p>
+                                            <p class="inbox-item-text">Time : 18:09:56</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong><span class="profile-status away pull-right"></span></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No..: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9975">(9975)</a></p>
+                                            <p class="inbox-item-text">Table No: Table-3</p>
+                                            <p class="inbox-item-text">Time : 20:40:18</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Kamal Hassan</strong><span class="profile-status away pull-right"></span></p>
+
+                                            <p class="inbox-item-text">Phone: 0171742241476</p>
+                                            <p class="inbox-item-text">Order No..: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9972">(9972)</a></p>
+                                            <p class="inbox-item-text">Table No: Table-V7</p>
+                                            <p class="inbox-item-text">Time : 11:21:41</p>
+
+                                        </div>
+                                        <div class="inbox-item">
+                                            <p class="inbox-item-customer-name"><strong class="inbox-item-author">Name : Walkin</strong><span class="profile-status away pull-right"></span></p>
+
+                                            <p class="inbox-item-text">Phone: 8801717426371</p>
+                                            <p class="inbox-item-text">Order No..: <a href="https://restaurant.bdtask.com/demo-classic/ordermanage/order/orderdetails/9971">(9971)</a></p>
+                                            <p class="inbox-item-text">Table No: Table-V7</p>
+                                            <p class="inbox-item-text">Time : 11:19:54</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input name="monthname" id="monthname" type="hidden" value="October-20,November-20,December-20,January-21,March-21,March-21,April-21,May-21,June-21,July-21,August-21,September-21" />
+                <input name="monthlysaleamount" id="monthlysaleamount" type="hidden" value="1274831.97, 778141.15, 616957.26, 100908995.37, 184246.56, 184246.56, 47559.89, 218387.55, 418191.79, 638932.91, 961881.14, 280883.74, " />
+                <input name="monthlysaleorder" id="monthlysaleorder" type="hidden" value="1985, 1796, 1308, 896, 148, 148, 49, 183, 325, 594, 513, 391, " />
+                <input name="onlinesaleamount" id="onlinesaleamount" type="hidden" value="244592.90, 88594.45, 55090.21, 136045.75, 61087.70, 61087.70, 11417.80, 36024.00, 93491.16, 57840.11, 431922.04, 40218.40, " />
+                <input name="onlinesaleorder" id="onlinesaleorder" type="hidden" value="394, 170, 161, 164, 49, 49, 16, 43, 66, 72, 70, 69, " />
+                <input name="offlinesaleamount" id="offlinesaleamount" type="hidden" value="859413.68, 441335.71, 418912.85, 100416214.84, 49588.28, 49588.28, 28018.49, 99002.70, 230902.62, 376156.97, 355967.20, 142948.02, " />
+                <input name="offlinesaleorder" id="offlinesaleorder" type="hidden" value="1170, 1064, 866, 461, 45, 45, 26, 97, 170, 367, 304, 217, " />
+                <!-- Chart js -->
+                <script src="https://restaurant.bdtask.com/demo-classic/assets/js/Chart.min.js" type="text/javascript"></script>
+                <script src="https://restaurant.bdtask.com/demo-classic/dashboard/home/chartjs" type="text/javascript"></script>
+                <script src="https://restaurant.bdtask.com/demo-classic/application/modules/dashboard/assest/js/chartdata.js" type="text/javascript"></script>
+            </div> <!-- /.content -->
+
+
+        </div> <!-- /.content-wrapper -->
+
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                98 Green Road, Farmgate, Dhaka-1215.
+            </div>
+
+            <strong>
+                2021
+            </strong>
+            <a href="https://restaurant.bdtask.com/demo-classic/dashboard/home">
+                Dynamic Admin Panel
+            </a>
+        </footer>
+
+    </div> <!-- ./wrapper -->
+    <!-- Start Core Plugins-->
+    <!-- jquery-ui -->
+    <script src="https://restaurant.bdtask.com/demo-classic/ordermanage/order/showljslang" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/ordermanage/order/basicjs" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- Bootstrap -->
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Bootstrap tag input-->
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/bootstrap-tagsinput.js" type="text/javascript"></script>
+    <!-- lobipanel -->
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/lobipanel.min.js" type="text/javascript"></script>
+    <!-- Pace js -->
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/pace.min.js" type="text/javascript"></script>
+    <!-- SlimScroll -->
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <!-- FastClick -->
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/fastclick.min.js" type="text/javascript"></script>
+    <!-- Select2 -->
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/select2.min.js" type="text/javascript"></script>
+    <!-- bootstrap timepicker -->
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/jquery-ui-sliderAccess.js" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/jquery-ui-timepicker-addon.min.js" type="text/javascript"></script>
+    <!-- tinymce js -->
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/tinymce/tinymce.min.js" type="text/javascript"></script>
+    <!-- dataTables js -->
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/datatables/js/dataTables.min.js" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/datatables/js/buttons.colVis.min.js" type="text/javascript"></script>
+
+    <!-- AdminBD frame -->
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/frame.js" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/jquery.confirm.js" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/fontawesome-iconpicker.js" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/sweetalert/sweetalert.min.js" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/toastr/toastr.min.js" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/pusher.min.js" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/mousetrap-master/mousetrap.min.js" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/print.js" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/masonry-package.js" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/images.loaded.js" type="text/javascript"></script>
+    <!-- End Core Plugins -->
+    <!-- Dashboard js -->
+    <script src="https://restaurant.bdtask.com/demo-classic/assets/js/dashboard.js" type="text/javascript"></script>
+    <script src="https://restaurant.bdtask.com/demo-classic/application/modules/template/assets/js/template.js" type="text/javascript"></script>
+
+    <!-- Include module Script -->
+    <script src=https://restaurant.bdtask.com/demo-classic/application/modules/accounts/assets/js/script.js?v =1.4 type="text/javascript"></script>
+    <script src=https://restaurant.bdtask.com/demo-classic/application/modules/hrm/assets/js/script.js?v =1.4 type="text/javascript"></script>
+    <script src=https://restaurant.bdtask.com/demo-classic/application/modules/itemmanage/assets/js/script.js?v =1.4 type="text/javascript"></script>
+    <script src=https://restaurant.bdtask.com/demo-classic/application/modules/ordermanage/assets/js/script.js?v =1.4 type="text/javascript"></script>
+    <script src=https://restaurant.bdtask.com/demo-classic/application/modules/production/assets/js/script.js?v =1.4 type="text/javascript"></script>
+    <script src=https://restaurant.bdtask.com/demo-classic/application/modules/purchase/assets/js/script.js?v =1.4 type="text/javascript"></script>
+    <script src=https://restaurant.bdtask.com/demo-classic/application/modules/report/assets/js/script.js?v =1.4 type="text/javascript"></script>
+    <script src=https://restaurant.bdtask.com/demo-classic/application/modules/reservation/assets/js/script.js?v =1.4 type="text/javascript"></script>
+    <script src=https://restaurant.bdtask.com/demo-classic/application/modules/setting/assets/js/script.js?v =1.4 type="text/javascript"></script>
+    <script>
+        var url = window.location;
+        // for sidebar menu entirely but not cover treeview
+        $('ul.sidebar-menu a').filter(function() {
+            return this.href != url;
+        }).parent().removeClass('active');
+
+        // for sidebar menu entirely but not cover treeview
+        $('ul.sidebar-menu a').filter(function() {
+            return this.href == url;
+        }).parent().addClass('active');
+
+        // for treeview
+        $('ul.treeview-menu a').filter(function() {
+            return this.href == url;
+        }).parentsUntil(".sidebar-menu > .treeview-menu").addClass('active');
+    </script>
+    <input name="segment1" id="segment1" type="hidden" value="dashboard" />
+    <input name="segment2" id="segment2" type="hidden" value="home" />
+    <input name="segment3" id="segment3" type="hidden" value="" />
+    <input name="segment4" id="segment4" type="hidden" value="" />
+    <input name="segment5" id="segment5" type="hidden" value="" />
+</body>
+</html>
