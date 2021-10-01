@@ -9,7 +9,6 @@ namespace EntityLayer.Concrete
 {
     public class User
     {
-
         [Key]
         public int UserID { get; set; }
         public string UserFirstName { get; set; }
@@ -17,10 +16,12 @@ namespace EntityLayer.Concrete
         public byte[] PasswordSalt { get; set; }
         public byte[] PasswordHash { get; set; }
         public string UserMail { get; set; }
-        public int UserType { get; set; }
         public DateTime UserRegisterDate { get; set; }
         public string UserPicture { get; set; }
         public bool UserStatus { get; set; }
+
+        public int UserTypeID { get; set; }
+        public UserType userType { get; set; }
 
         public List<UserAddress> UserAdresses { get; set; }
         public List<Restaurant> Restaurants { get; set; }

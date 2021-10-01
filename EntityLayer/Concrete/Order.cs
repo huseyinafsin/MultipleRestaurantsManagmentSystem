@@ -13,7 +13,9 @@ namespace EntityLayer.Concrete
         public int OrderID { get; set; }
         public int FoodCount { get; set; }
         public DateTime Date { get; set; }
-        public string FoodCondition { get; set; }
+
+        public int FoodConditionID { get; set; }
+        public FoodCondition foodCondition { get; set; }
 
         public int UserID { get; set; }
         public User User { get; set; }

@@ -8,30 +8,31 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\pantheon\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\baris\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pantheon\\source\\repos\\MultipleRestaurantsManagentSystem\\EntityLayer\\EntityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\baris\\Desktop\\BFA\\Kurslar\\MultipleRestaurantsManagmentSystem\\EntityLayer\\EntityLayer.csproj",
       "projectName": "EntityLayer",
-      "projectPath": "C:\\Users\\pantheon\\source\\repos\\MultipleRestaurantsManagentSystem\\EntityLayer\\EntityLayer.csproj",
-      "packagesPath": "C:\\Users\\pantheon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pantheon\\source\\repos\\MultipleRestaurantsManagentSystem\\EntityLayer\\obj\\",
+      "projectPath": "C:\\Users\\baris\\Desktop\\BFA\\Kurslar\\MultipleRestaurantsManagmentSystem\\EntityLayer\\EntityLayer.csproj",
+      "packagesPath": "C:\\Users\\baris\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\baris\\Desktop\\BFA\\Kurslar\\MultipleRestaurantsManagmentSystem\\EntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages"
       ],
       "configFilePaths": [
-        "C:\\Users\\pantheon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\baris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -65,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

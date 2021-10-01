@@ -24,5 +24,7 @@ namespace EntityLayer.Concrete
 
         public List<Basket> Baskets { get; set; }
         public List<Order> Orders { get; set; }
+        public List<FoodContent> foodContents { get; set; }
+        public List<FoodAdded> foodAddeds { get; set; }
     }
 }

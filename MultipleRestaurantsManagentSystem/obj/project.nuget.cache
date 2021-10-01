@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CwC/pwquGZrvohwHopFgBljb0xchbNJk1nUxXyQXo7prPv558qDfcHb2hQql+nkH5U0vjXfLeIpTGD+orP6ruQ==",
+  "dgSpecHash": "I7ZQUBkUkur0jwpDfHFVWoTd+DHUuSmcu6+aVQAS7NBctNj8xJz1W/9JSPajl04XzeCPz2mRP6A/kttGn9GiBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pantheon\\source\\repos\\MultipleRestaurantsManagentSystem\\MultipleRestaurantsManagentSystem\\MultipleRestaurantsManagentSystem.csproj",
+  "projectFilePath": "C:\\Users\\baris\\Desktop\\BFA\\Kurslar\\MultipleRestaurantsManagmentSystem\\MultipleRestaurantsManagentSystem\\MultipleRestaurantsManagentSystem.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pantheon\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512"
+    "C:\\Users\\baris\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512"
   ],
   "logs": []
 }
