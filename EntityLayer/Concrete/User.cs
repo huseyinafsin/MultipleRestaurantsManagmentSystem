@@ -4,24 +4,20 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Entities;
+using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class User
+    public class User : BaseEntity, IEntity
     {
-        [Key]
-        public int UserID { get; set; }
-        public string UserFirstName { get; set; }
-        public string UserLastName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public byte[] PasswordSalt { get; set; }
         public byte[] PasswordHash { get; set; }
-        public string UserMail { get; set; }
-        public DateTime UserRegisterDate { get; set; }
-        public string UserPicture { get; set; }
-        public bool UserStatus { get; set; }
-
-        public int UserTypeID { get; set; }
-        public UserType userType { get; set; }
+        public string Mail { get; set; }
+        public DateTime RegisterDate { get; set; }
+        public string Picture { get; set; }
 
         public List<UserAddress> UserAdresses { get; set; }
         public List<Restaurant> Restaurants { get; set; }

@@ -4,23 +4,23 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Entities;
+using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class Order
+    public class Order : BaseEntity, IEntity
     {
-        [Key]
-        public int OrderID { get; set; }
         public int FoodCount { get; set; }
         public DateTime Date { get; set; }
 
-        public int FoodConditionID { get; set; }
-        public FoodCondition foodCondition { get; set; }
+        public int ConditionId { get; set; }
+        public Condition Condition { get; set; }
 
-        public int UserID { get; set; }
+        public int UserId { get; set; }
         public User User { get; set; }
 
-        public int FoodID { get; set; }
+        public int FoodId { get; set; }
         public Food Food { get; set; }
     }
 }

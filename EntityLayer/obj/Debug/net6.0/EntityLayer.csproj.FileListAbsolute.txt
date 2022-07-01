@@ -1,0 +1,15 @@
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\bin\Debug\net6.0\Core.dll
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\bin\Debug\net6.0\Core.pdb
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CopyComplete
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll

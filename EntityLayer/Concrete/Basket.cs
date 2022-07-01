@@ -4,14 +4,14 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Entities;
+using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class Basket
+    public class Basket : BaseEntity, IEntity
     {
-        [Key]
-        public int BasketID { get; set; }
-        public int FoodCount { get; set; }
+        public int Count { get; set; }
         public DateTime Date { get; set; }
 
         public int UserID { get; set; }

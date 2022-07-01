@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "destination": "wwwroot/lib/jquery-ui/",
+      "library": "jqueryui@1.12.1"
+    },
+    {
+      "destination": "wwwroot/lib/bootstrap-tagsinput/",
+
+      "library": "bootstrap-tagsinput@0.8.0"
+    },
+    {
+      "destination": "wwwroot/lib/lobipanel",
+      "library": "lobipanel@1.0.6"
+    },
+    {
+      "destination": "wwwroot/lib/fontawesome-iconpicker",
+      "library": "fontawesome-iconpicker@3.2.0"
+    },
+    {
+      "destination": "wwwroot/lib/fontawesome",
+      "library": "font-awesome@5.15.4"
+    },
+    {
+      "destination": "wwwroot/lib/select2",
+      "library": "select2@4.0.13"
+    },
+
+  ]
+}

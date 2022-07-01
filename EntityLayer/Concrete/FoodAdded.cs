@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Entities;
+using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class FoodAdded
+    public class FoodAdded : BaseEntity, IEntity
     {
-        public int FoodAddedID { get; set; }
         public string FoodAddedName { get; set; }
 
         public int FoodID { get; set; }
-        public Food food { get; set; }
+        public Food Food { get; set; }
     }
 }

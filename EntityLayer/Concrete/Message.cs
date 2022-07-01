@@ -4,16 +4,15 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Entities;
+using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class Message
+    public class Message : BaseEntity, IEntity
     {
-        [Key]
-        public int MessageID { get; set; }
-        public string MessageText { get; set; }
-        public DateTime MessageDate { get; set; }
-        //public bool MessageStatus { get; set; }
+        public string Text { get; set; }
+        public DateTime Date { get; set; }
 
         public int ToUserID { get; set; }
         public User FromUser { get; set; }

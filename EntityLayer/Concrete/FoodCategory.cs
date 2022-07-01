@@ -4,15 +4,14 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Entities;
+using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class FoodCategory
+    public class FoodCategory : BaseEntity, IEntity
     {
-        [Key]
-        public int FoodCategoryID { get; set; }
-        public string FoodCategoryName { get; set; }
-        //public bool FoodCategoryStatus { get; set; }
+        public string Name { get; set; }
 
         public List<Food> Foods { get; set; }
     }

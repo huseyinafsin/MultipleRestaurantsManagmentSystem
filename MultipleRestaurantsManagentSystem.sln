@@ -1,23 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31515.178
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleRestaurantsManagentSystem", "MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem.csproj", "{13F72CF8-E3E2-48C5-9173-4E5817A3C6A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultipleRestaurantsManagentSystem", "MultipleRestaurantsManagentSystem\MultipleRestaurantsManagentSystem.csproj", "{F734ADAA-4779-4131-ACCC-3F959299715A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{05932F0D-BB7B-4F00-94C4-94ED656E477C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{C674BDB0-5885-4E0F-A7EF-06DD15CC734E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{EB49DAC0-B046-45E4-90F6-7627650A0F90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{385897A9-57C3-405B-BF44-876B9F861AA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{9866DEF6-B901-4432-AC7B-D1BDB6D7FA5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{00902B92-D179-4CFD-AEAC-3F35BDD88C9C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomerFacing", "CustomerFacing", "{D68591DE-C4C7-458D-B6AE-DC3956C1D049}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SuperAdmin", "SuperAdmin", "{C3DCAED3-9966-49E9-8DFE-27846F878ED1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrderTakingManagment", "OrderTakingManagment", "{D3F8C344-3EE1-4873-9DA1-8A20B3D06DAB}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeliveryAndDriverManagment", "DeliveryAndDriverManagment", "{CD60C6D3-71E8-407F-A384-3C1EB0907D6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{A1D8B8EA-313A-44A1-B3CA-A64EC785F1B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,31 +19,29 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{13F72CF8-E3E2-48C5-9173-4E5817A3C6A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13F72CF8-E3E2-48C5-9173-4E5817A3C6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13F72CF8-E3E2-48C5-9173-4E5817A3C6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13F72CF8-E3E2-48C5-9173-4E5817A3C6A1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{05932F0D-BB7B-4F00-94C4-94ED656E477C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05932F0D-BB7B-4F00-94C4-94ED656E477C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05932F0D-BB7B-4F00-94C4-94ED656E477C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05932F0D-BB7B-4F00-94C4-94ED656E477C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB49DAC0-B046-45E4-90F6-7627650A0F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB49DAC0-B046-45E4-90F6-7627650A0F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB49DAC0-B046-45E4-90F6-7627650A0F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB49DAC0-B046-45E4-90F6-7627650A0F90}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9866DEF6-B901-4432-AC7B-D1BDB6D7FA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9866DEF6-B901-4432-AC7B-D1BDB6D7FA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9866DEF6-B901-4432-AC7B-D1BDB6D7FA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9866DEF6-B901-4432-AC7B-D1BDB6D7FA5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F734ADAA-4779-4131-ACCC-3F959299715A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F734ADAA-4779-4131-ACCC-3F959299715A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F734ADAA-4779-4131-ACCC-3F959299715A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F734ADAA-4779-4131-ACCC-3F959299715A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C674BDB0-5885-4E0F-A7EF-06DD15CC734E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C674BDB0-5885-4E0F-A7EF-06DD15CC734E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C674BDB0-5885-4E0F-A7EF-06DD15CC734E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C674BDB0-5885-4E0F-A7EF-06DD15CC734E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{385897A9-57C3-405B-BF44-876B9F861AA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{385897A9-57C3-405B-BF44-876B9F861AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{385897A9-57C3-405B-BF44-876B9F861AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{385897A9-57C3-405B-BF44-876B9F861AA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00902B92-D179-4CFD-AEAC-3F35BDD88C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00902B92-D179-4CFD-AEAC-3F35BDD88C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00902B92-D179-4CFD-AEAC-3F35BDD88C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00902B92-D179-4CFD-AEAC-3F35BDD88C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D8B8EA-313A-44A1-B3CA-A64EC785F1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D8B8EA-313A-44A1-B3CA-A64EC785F1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D8B8EA-313A-44A1-B3CA-A64EC785F1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D8B8EA-313A-44A1-B3CA-A64EC785F1B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{13F72CF8-E3E2-48C5-9173-4E5817A3C6A1} = {D68591DE-C4C7-458D-B6AE-DC3956C1D049}
-		{05932F0D-BB7B-4F00-94C4-94ED656E477C} = {D68591DE-C4C7-458D-B6AE-DC3956C1D049}
-		{EB49DAC0-B046-45E4-90F6-7627650A0F90} = {D68591DE-C4C7-458D-B6AE-DC3956C1D049}
-		{9866DEF6-B901-4432-AC7B-D1BDB6D7FA5D} = {D68591DE-C4C7-458D-B6AE-DC3956C1D049}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45F08EBA-3500-497A-B3FC-1428CE3D4751}

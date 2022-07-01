@@ -4,16 +4,17 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Entities;
+using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class UserAddress
+    public class UserAddress : BaseEntity, IEntity
     {
-        [Key]
-        public int UserAdressID { get; set; }
+
         public string Adress { get; set; }
 
-        public int UserID { get; set; }
+        public int UserId { get; set; }
         public User User { get; set; }
 
         public int LocationID { get; set; }

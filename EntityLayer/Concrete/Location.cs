@@ -4,15 +4,14 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Entities;
+using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class Location
+    public class Location : BaseEntity, IEntity
     {
-        [Key]
-        public int LocationID { get; set; }
-        public string LocationName { get; set; }
-        //public bool LocationStatus { get; set; }
+        public string Name { get; set; }
 
         public List<UserAddress> UserAdresses { get; set; }
     }
