@@ -9,8 +9,9 @@ using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class User : BaseEntity, IEntity
+    public class User 
     {
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public byte[] PasswordSalt { get; set; }
@@ -19,11 +20,5 @@ namespace EntityLayer.Concrete
         public DateTime RegisterDate { get; set; }
         public string Picture { get; set; }
 
-        public List<UserAddress> UserAdresses { get; set; }
-        public List<Restaurant> Restaurants { get; set; }
-        public List<Order> Orders { get; set; }
-        public List<Message> Messages { get; set; }
-        public List<Comment> Comments { get; set; }
-        public List<Basket> Baskets { get; set; }
     }
 }

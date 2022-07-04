@@ -17,3 +17,5 @@ C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\DataAccessLayer\
 C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
 C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
 C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\DataAccessLayer\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\DataAccessLayer\bin\Debug\net6.0\appsettings.json

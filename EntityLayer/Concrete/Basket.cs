@@ -9,15 +9,15 @@ using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class Basket : BaseEntity, IEntity
+    public class Basket : IEntity
     {
+        public int Id { get; set; }
+
         public int Count { get; set; }
         public DateTime Date { get; set; }
 
-        public int UserID { get; set; }
-        public User User { get; set; }
+        public int UserId { get; set; }
 
-        public int FoodID { get; set; }
-        public Food Food { get; set; }
+        public int FoodId { get; set; }
     }
 }

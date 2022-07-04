@@ -17,3 +17,5 @@ C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\BusinessLayer\ob
 C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
 C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
 C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\BusinessLayer\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\hafsin\source\repos\MultipleRestaurantsManagmentSystem\BusinessLayer\bin\Debug\net6.0\appsettings.json

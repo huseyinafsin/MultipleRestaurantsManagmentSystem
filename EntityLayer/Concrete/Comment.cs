@@ -9,13 +9,14 @@ using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class Comment: BaseEntity, IEntity
+    public class Comment
     {
+        public int Id { get; set; }
+
         public string Text { get; set; }
         public int Rate { get; set; }
         public DateTime Date { get; set; }
 
-        public int UserID { get; set; }
-        public User User { get; set; }
+        public int UserId { get; set; }
     }
 }

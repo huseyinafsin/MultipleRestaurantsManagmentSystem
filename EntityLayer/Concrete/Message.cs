@@ -9,15 +9,16 @@ using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class Message : BaseEntity, IEntity
+    public class Message 
     {
+        public int Id { get; set; }
+
         public string Text { get; set; }
         public DateTime Date { get; set; }
 
-        public int ToUserID { get; set; }
-        public User FromUser { get; set; }
+        public int ToUserId { get; set; }
 
-        public int FromUserID { get; set; }
-        public User ToUser { get; set; }
+        public int FromUserId { get; set; }
+
     }
 }

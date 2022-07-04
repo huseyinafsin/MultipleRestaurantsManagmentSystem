@@ -8,11 +8,12 @@ using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class FoodAdded : BaseEntity, IEntity
+    public class FoodAdded 
     {
-        public string FoodAddedName { get; set; }
+        public int Id { get; set; }
 
-        public int FoodID { get; set; }
-        public Food Food { get; set; }
+        public string Name { get; set; }
+
+        public int FoodId { get; set; }
     }
 }

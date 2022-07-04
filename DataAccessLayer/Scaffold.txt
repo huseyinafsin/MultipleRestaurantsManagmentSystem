@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext -Connection "Data Source=HAFSIN;Initial Catalog=MRMP;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;App=EntityFramework" -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir "EntityLayer/Concrete" -Context "RestaurantContext" –Force﻿

@@ -9,15 +9,15 @@ using Core.Entities.Concrete;
 
 namespace EntityLayer.Concrete
 {
-    public class Restaurant : BaseEntity, IEntity
+    public class Restaurant 
     {
+
+        public int Id { get; set; }
 
         public string Name { get; set; }
         public string Type { get; set; }
 
         public int UserId { get; set; }
-        public User User { get; set; }
 
-        public List<Food> Foods { get; set; }
     }
 }
