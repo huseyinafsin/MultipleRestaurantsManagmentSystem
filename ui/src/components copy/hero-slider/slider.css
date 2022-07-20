@@ -1,0 +1,21 @@
+:root{
+    --body-color: #0A071A;
+    --primary-color:  #F5B70A;
+    --secondary-color: #141124;
+    --btn-bg-color: #F76E11;
+    --p-color: #C4C4C4;
+    --services_color: #7865FF,#FF766B,#F5B70A, #2ACE92;
+  }
+.btn {
+    padding: 7pxp 7px !important;
+    border-radius: 5px !important;
+    background: var(--btn-bg-color) !important;
+    color: white !important;
+    font-size: 0.9rem !important;
+    margin-top: 30px;
+}
+.btn:hover  {
+    color: var(--btn-bg-color) !important;
+    background: white !important;
+  
+}
